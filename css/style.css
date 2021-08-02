@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --azul: #519DB4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-left: 50px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+body{
+    background-color: #0f1624;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 20px;
+    background-color: #4eb4d311;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    
+}
+
+.logo{
+    color: var(--azul);
+    font-size: 35px;
+    margin-right: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    
+
+}
+
+header nav ul li{
+    margin-right: 10px;
+}
+
+header nav ul li a{
+   
+    color: #bbbbbb;
+    font-size: 20px;
+
+}
+
+header nav ul li a:hover{
+    color: #fff;
+}
+
+
+
+.icons i{
+    font-size: 35px;
+    margin-left: 20px;
+    
+}
+
+.icons i:hover{
+    color:var(--azul);
+}
+
+/*Home*/
+
+.home{
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info1 p{
+    font-size: 25px;
+    color: #bbbbbb;
+
+}
+
+.info1 small{
+    color: var(--azul);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.info1 h1{
+    font-size: 80px;
+}
+
+.info2{
+    margin-top: 30px;
+}
+
+.info2 p{
+    font-size: 22px;
+    max-width: 500px;
+}
+
+.info2 button{
+    margin-top: 20px;
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px -2px #46abca;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s ease;
+
+}
+
+.info2 button a{
+    color: #fff;
+    display: block;
+    height: auto;
+}
+
+ .info2 button a:hover{
+    color: #000;
+}
+
+.info2 button:hover{
+    background-color: #46abca;
+  
+}
