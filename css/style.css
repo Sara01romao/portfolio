@@ -256,6 +256,51 @@ hr{
 }
 
 
+/*Sobre*/
+
+.sobre{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.txtSobre{
+    font-size: 22px;
+    color: #f7f7f7a9;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+
+.infoSobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    max-width: 400px;
+}
+
+.infoSobre i{
+    position: relative;
+    right: calc(14% - 16px);
+    color: var(--azul);
+}
+
+
+.itemSobre{
+    max-width: 150px;
+    margin-right: 50px;
+}
+
+.itemSobre h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.itemSobre small{
+    font-size: 14px;
+   
+}
+
 /*Footer*/
 
 footer{
