@@ -9,7 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 
 ul{
     margin-left: 50px;
@@ -410,8 +412,10 @@ a.disabled{
 /*Footer*/
 
 footer{
+   
     padding-top: 50px;
     text-align: center;
     background-color: #4eb4d311;
     padding-bottom: 50px;
+    margin-top: 50px;
 }
