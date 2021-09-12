@@ -7,7 +7,8 @@
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <!-- aos animation -->
+    <link rel="stylesheet" href="css/aos.css">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
@@ -18,7 +19,7 @@
         <div class="container">
             <div class="headerContainer">
                 <nav>
-                    <a href="#" class="logo"> <i class="fab fa-pagelines"></i></a>
+                    <a href="#" class="logo">SR</a>
                     
                     <ul>
                         <li><a href="#projetos">Projetos</a></li>
@@ -48,195 +49,156 @@
 
     </header>
 
-    <section class="container home" id="home">
-        <div class="infoHome">
-            <div class="info1">
-                <p>Olá, eu sou a</p>
-                <h1> Sara Romão</h1>
-                <small>Desenvolvedora Web & UI/Designer</small>
+    <section class="homebg">
+     
+        <div class="container home" id="home">
+          
+            <div class="infoHome">
+                <div class="info1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2000"> Sara Romão</h1>
+                    <small>Desenvolvedora Web & UI/Designer</small>
+                </div>
+        
+                <div class="info2">
+                    <p> Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos.</p>
+                    <button> <a href="#projetos"> Ver</a></button>
+                </div>
             </div>
     
-            <div class="info2">
-                <p> Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos.</p>
-                <button> <a href="#projetos"> Ver</a></button>
-            </div>
+           
+    
         </div>
-
-        <div>
-            <img src="./img/bg.png" alt="">
-        </div>
-       
-
     </section>
+   
 
     <hr>
+
+    
 
     <section class="container projetos" id="projetos">
             <h2 class="titulo">Projetos</h2>
 
-            <div class="itens">
-                <div class="item">
-                    <div class="imgProjeto">
+            <div class="projectContainer">
+                <div class="projectCard" data-aos="fade-right">
+                    <div class="pImg">
                         <img src="./img/p1.jpg" alt="">
                     </div>
-
-                    <div class="infoItem">
-                        <div class="detalhesItem">
-                            <h3>Final Space</h3>
-                            <p> O projeto desenvolvido para mostrar informações sobre personagens da serie via api.</p>
-                            
-                            <div class="tech">
-                                <i class="fab fa-react"></i>
-                                <i class="fab fa-css3-alt"></i>
-                            </div>  
+    
+                    <div class="pTxt">
+                        <h2>Final Space</h2>
+                        <p>O projeto desenvolvido para mostrar informações sobre personagens da serie via api.</p>
+                        <hr>
+    
+                        <div class="projectIcons">
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-
-                        <div class="linkCode">
-                            <a href="https://github.com/Sara01romao/api-FinalSpace" target="_blank">Ver código <i class="fab fa-github"></i></a>
-                            <a class="disabled" href="#" target="_blank">Ver site <i class="fas fa-chevron-right"></i></a>
+    
+                        <div class="projectBtns">
+                            <button>
+                                <a href="https://github.com/Sara01romao/api-FinalSpace" target="_blank"> Código <i class="fab fa-github"></i></a>
+                                
+                            </button>
+    
+                            <!-- <button>
+                                <a href="https://github.com/Sara01romao/api-FinalSpace" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
+                                
+                            </button> -->
                         </div>
                     </div>
+    
                 </div>
-
-                <!-- fim item -->
-
-
-                <div class="item">
-                    <div class="imgProjeto">
+    
+    
+                <div class="projectCard" data-aos="fade-left">
+                    <div class="pImg">
                         <img src="./img/p2.png" alt="">
                     </div>
-
-                    <div class="infoItem">
-                        <div class="detalhesItem">
-                            <h3>Filmaria</h3>
-                            <p> O projeto sobre filmes e com funcionalidade de criar uma lista de filmes salvos</p>
-
-                            <div class="tech">
-                                <i class="fab fa-react"></i>
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
+    
+                    <div class="pTxt">
+                        <h2>Filmaria</h2>
+                        <p> O projeto sobre filmes e com funcionalidade de criar uma lista de filmes salvos</p>
+                        <hr>
+    
+                        <div class="projectIcons">
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-
-                        <div class="linkCode">
-                            <a href="https://github.com/Sara01romao/filmaria-projeto" target="_blank">Ver código <i class="fab fa-github"></i></a>
-                            <a href="https://filmariacursoprojeto.netlify.app/" target="_blank">Ver site <i class="fas fa-chevron-right"></i></a>
+    
+                        <div class="projectBtns">
+                            <button>
+                                <a href="https://github.com/Sara01romao/filmaria-projeto"  target="_blank"> Código <i class="fab fa-github"></i></a>
+                                
+                            </button>
+    
+                            <button>
+                                <a href="https://filmariacursoprojeto.netlify.app/" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
+                                
+                            </button>
                         </div>
                     </div>
+    
                 </div>
-
-                 <!-- fim item -->
-
-
-                 <div class="item">
-                    <div class="imgProjeto">
+    
+                <div class="projectCard" data-aos="fade-right">
+                    <div class="pImg">
                         <img src="./img/p3.png" alt="">
                     </div>
-
-                    <div class="infoItem">
-
-                        <div class="detalhesItem">
-                            <h3>Selfcare</h3>
-                            <p> Desafio open source  para exibir produtos de uma loja online. </p>
-
-                            <div class="tech">
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
+    
+                    <div class="pTxt">
+                        <h2>Selfcare</h2>
+                        <p> Desafio open source  para exibir produtos de uma loja online. </p>
+                        <hr>
+    
+                        <div class="projectIcons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-
-                        <div class="linkCode">
-                            <a href="https://github.com/Sara01romao/filmaria-projeto" target="_blank">Ver código <i class="fab fa-github"></i></a>
-                            <a class="disabled" href="#" target="_blank">Ver site <i class="fas fa-chevron-right"></i></a>
-
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- fim item -->
-
-
-                 <div class="item">
-                    <div class="imgProjeto">
-                        <img src="./img/p4.png" alt="">
-                    </div>
-
-                    <div class="infoItem">
-                        <div class="detalhesItem">
-                            <h3>Tintas</h3>
-                            <p> Págína web desenvolvida para prática da estilização com Styled Components.</p>
-
-                            <div class="tech row">
-                                <i class="fab fa-react"></i>
+    
+                        <div class="projectBtns">
+                            <button>
+                                <a href="https://github.com/Sara01romao/selfcare"  target="_blank"> Código <i class="fab fa-github"></i></a>
                                 
-                                <p class="emoji">< 💅></p>
-                            </div>  
-                        </div>
-
-                        <div class="linkCode">
-                            <a href="https://github.com/Sara01romao/selfcare" target="_blank">Ver código <i class="fab fa-github"></i></a>
-
-                            <a class="disabled" href="#" target="_blank">Ver site <i class="fas fa-chevron-right"></i></a>
+                            </button>
+    
+                            <!-- <button>
+                                <a href="https://filmariacursoprojeto.netlify.app/" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
+                                
+                            </button> -->
                         </div>
                     </div>
+    
                 </div>
-
-                 <!-- fim item -->
-
-
-                 <div class="item">
-                    <div class="imgProjeto">
+    
+                <div class="projectCard" data-aos="fade-left">
+                    <div class="pImg">
                         <img src="./img/p5.png" alt="">
                     </div>
-
-                    <div class="infoItem">
-                        <div class="detalhesItem">
-                            <h3>IMC calculadora </h3>
-                            <p> Aplicação que calcula o índice de massa corporal usando a altura e peso.</p>
-
-                            <div class="tech">
-                                <i class="fab fa-react"></i>
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                        
+    
+                    <div class="pTxt">
+                        <h2>IMC Calculadora</h2>
+                        <p> Aplicação que calcula o índice de massa corporal usando a altura e peso. </p>
+                        <hr>
+    
+                        <div class="projectIcons">
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-css3-alt"></i>
                         </div>
-
-                        <div class="linkCode">
-                            <a href="https://github.com/Sara01romao/imc-js" target="_blank">Ver código <i class="fab fa-github"></i></a>
-                            <a href="https://sara01romao.github.io/imc-js/" target="_blank">Ver site <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- fim item -->
-
-
-                 <div class="item">
-                    <div class="imgProjeto">
-                        <img src="./img/p6.png" alt="">
-                    </div>
-
-                    <div class="infoItem">
-                        <div class="detalhesItem">
-                            <h3>Animes</h3>
-                            <p> Projeto para pesquisa de Animes mostrando os nomes encontrados e as descrições deles.</p>
-
-                            <div class="tech row">
-                                <i class="fab fa-react"></i>
+    
+                        <div class="projectBtns">
+                            <button>
+                                <a href="https://github.com/Sara01romao/imc-js"  target="_blank"> Código <i class="fab fa-github"></i></a>
                                 
-                                <p class="emoji">< 💅></p>
-                            </div>  
-                        
-                        </div>
-
-                        <div class="linkCode">
-                            <a href="https://github.com/Sara01romao/list-anime" target="_blank">Ver código <i class="fab fa-github"></i></a>
-                            <a class="disabled" href="#" target="_blank">Ver site <i class="fas fa-chevron-right"></i></a>
+                            </button>
+    
+                             <button> 
+                                <a href="https://sara01romao.github.io/imc-js/" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
+                                
+                            </button> 
                         </div>
                     </div>
+    
                 </div>
-                
-
-                
             </div>
 
 
@@ -246,11 +208,14 @@
     <hr>
 
 
+    
+
+
     <section class="container sobre" id="sobre">
-            <h2 class="titulo">Sobre</h2>
+            <h2 class="titulo2">Sobre</h2>
             <p class="txtSobre">
                 Formada em Análise e Desenvolvimento de Sistemas, sempre tive interesse pela aréa de TI por possibilitar o desenvolvimento de soluções 
-                para diferentes setores na sociedade. 
+                para diferentes setores. 
 
                
             </p>
@@ -258,7 +223,7 @@
 
 
             <div class="infoSobreContainer">
-                <div class="infoSobre">
+                <div class="infoSobre" data-aos="fade-right" data-aos-duration="1500">
                     <div class="itemSobre">
                         <h4>2020</h4>
                         <small>Análise e Desenvolvimento de Sistemas- Fatec</small>
@@ -275,7 +240,7 @@
                 </div>
 
 
-                <div class="infoSobre">
+                <div class="infoSobre" data-aos="fade-left" data-aos-duration="2000">
                     <div class="itemSobre">
                         <h4>Front-end</h4>
                         <small>HTML / CSS - intermediário</small><br>
@@ -325,7 +290,11 @@
     </footer>
 
 
+    <script src="/js/aos.js"></script>
 
+    <script>
+        AOS.init();
+      </script>
    
 </body>
 </html>
