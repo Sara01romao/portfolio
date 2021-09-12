@@ -135,7 +135,7 @@ header nav ul li a:hover{
 /*Home*/
 
 .homebg{
-     background-image: url('../img/bgteclado.jpg');
+     background-image: url(../img/bgteclado.jpg);
  
     background-repeat: no-repeat;
     
