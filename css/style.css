@@ -135,6 +135,8 @@ header nav ul li a:hover{
 /*Home*/
 
 .homebg{
+     background-image: linear-gradient(to top, rgba(255,255,255,0) 20%,
+    rgba(82, 0, 175, 0.445)),url('../img/bgteclado.jpg');
  
     background-repeat: no-repeat;
     
