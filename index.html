@@ -1,232 +1,204 @@
 <!DOCTYPE html>
-<html lang="pt-br?;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- aos animation -->
-    <link rel="stylesheet" href="css/aos.css">
-    <script src="./js/aos.js"></script>
-    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Document</title>
 </head>
 <body>
-    
     <header>
-        <div class="container">
-            <div class="headerContainer">
-                <nav>
-                    <a href="#" class="logo">SR</a>
-                    
-                    <ul>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li> <a href="#contato">Contato</a></li>
-                    </ul>
-                  
+        <nav>   
+            <a href=""><img src="./img/logo.svg" alt="logo"></a>
+           
+
+            <div class="menu">
+                <div class="menuHeader">
                    
-                </nav>
-        
-                <div class="icons">
-                    <a href="https://github.com/Sara01romao" target="_blank">
-                        <i class="fab fa-github-square"></i> 
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/sara-rom%C3%A3o-abbb8917b/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-
-                 
-                    
-                    
+                    <button id="close"><i class="fas fa-close"></i></button>
                 </div>
+                <ul>
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                    <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="#contatos" class="nav__link">Contato</a></li>
+                </ul>
+    
+               
             </div>
-        </div>
-        
 
+            <button id="open"><i class="fas fa-bars"></i></button>
+        </nav>
+       
     </header>
 
-    <section class="homebg">
-     
-        <div class="container home" id="home">
-          
-            <div class="infoHome">
-                <div class="info1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2000"> Sara Romão</h1>
-                    <small>Desenvolvedora Web & UI/Designer</small>
-                </div>
-        
-                <div class="info2">
-                    <p> Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos.</p>
-                    <button> <a href="#projetos"> Ver</a></button>
-                </div>
+    <section class="home" id="home">
+        <div class="container">
+            <div>
+                <h1>Sara Romão</h1>
+                <p class="infoHome">Desenvolvedora Front-end /UI</p>
+                <p class="txtHome">Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos.</p>
             </div>
-    
-           
-    
+
+            <button><a href="#projetos"><i class="fas fa-chevron-down"></i></a></button>
         </div>
+           
     </section>
-   
 
-    <hr>
 
-    
+    <section class="projetos" id="projetos">
+            <div>
+                <h2>Projetos</h2>
 
-    <section class="container projetos" id="projetos">
-            <h2 class="titulo">Projetos</h2>
+                <div>
+                     <!-- Swiper -->
+                     <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="itemProjeto">
+                                    <div class="imgProjeto">
+                                        <img src="./img/p0.png" alt="Projeto 1">
+                                        
+                                    </div>
 
-            <div class="projectContainer" style="overflow-x: hidden" >
-                <div class="projectCard" data-aos="fade-right">
-                    <div class="pImg">
-                        <img src="./img/p0.png" alt="">
-                    </div>
-    
-                    <div class="pTxt">
-                        <h2>Catálogo de compra </h2>
-                        <p>Desenvolvido com Context Api, com as funcionalidades de carrinho de compra e filtros de produtos. </p>
-                        <hr>
-    
-                        <div class="projectIcons">
-                            <i class="fab fa-react"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <img  class="sc-icon" src="./img//icon.svg" alt="">
+                                    <div class="infoProjeto">
+                                        <h3>Catálogo de compra </h3>
+                                        <p>Desenvolvido com Context Api, com as funcionalidades do carrinho de compra e filtros de produtos. </p>
+                        
+                                        <div class="icons">
+                                            <i class="fab fa-react"></i>
+                                            <i class="fab fa-css3-alt"></i>
+                                            <img  class="sc-icon" src="./img//icon.svg" alt="">
+                                        </div>
+                                        <div class="btns">
+                                            <button class="repo"><a href="https://github.com/Sara01romao/loja-natal" target="_blank">Repositório</a></button>
+                                            <button class="ver"><a href="https://lojanatal.netlify.app/" target="_blank">Acessar</a></button>
+                                        </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="itemProjeto">
+                                    <div class="imgProjeto">
+                                        <img src="./img/p2.png" alt="Projeto 2">
+                                        
+                                    </div>
+
+                                    <div class="infoProjeto">
+                                        <h3>Landing Page </h3>
+                                        <p> Projetada para uma empresa que presta serviços de acabamentos com gesso. </p>
+                                        
+                                        <div class="icons">
+                                            <i class="fab fa-html5"></i>
+                                            <i class="fab fa-css3-alt"></i>
+                                            <i class="fab fa-js"></i>
+                                        </div>
+                                        <div class="btns">
+                                            <button class="repo"><a href="https://github.com/Sara01romao/gesso"  target="_blank">Repositório</a></button>
+                                            <button class="ver"><a href="https://sara01romao.github.io/gesso/"target="_blank">Acessar</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                                <div class="itemProjeto">
+                                    <div class="imgProjeto">
+                                        <img src="./img/p3.png" alt="Projeto 2">
+                                        
+                                    </div>
+
+                                    <div class="infoProjeto">
+                                        <h3>Selfcare </h3>
+                                        <p> Desafio open source para elaborar loja de produtos naturais</p>
+                                        
+                                        <div class="icons">
+                                            <i class="fab fa-html5"></i>
+                                            <i class="fab fa-css3-alt"></i>
+                                            <i class="fab fa-js"></i>
+                                        </div>
+                                        <div class="btns">
+                                            <button class="repo"><a href="https://github.com/Sara01romao/selfcare"   target="_blank">Repositório</a></button>
+                                            <!-- <button class="ver"><a href="https://sara01romao.github.io/gesso/"target="_blank">Acessar</a></button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                         
                         </div>
-    
-                        <div class="projectBtns">
-                            <button>
-                                <a href="https://github.com/Sara01romao/loja-natal" target="_blank"> Código <i class="fab fa-github"></i></a>
-                                
-                            </button>
-    
-                            <button>
-                                <a href="https://lojanatal.netlify.app/" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
-                                
-                            </button>
-                        </div>
-                    </div>
-    
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
-    
-    
-                <div class="projectCard" data-aos="fade-left">
-                    <div class="pImg">
-                        <img src="./img/p2.png" alt="">
-                    </div>
-    
-                    <div class="pTxt">
-                        <h2>Landing Page </h2>
-                        <p> Projetada para uma empresa que presta serviços de acabamentos com gesso. </p>
-                        <hr>
-    
-                        <div class="projectIcons">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                           
-                        </div>
-    
-                        <div class="projectBtns">
-                            <button>
-                                <a href="https://github.com/Sara01romao/gesso"  target="_blank"> Código <i class="fab fa-github"></i></a>
-                                
-                            </button>
-    
-                             <button> 
-                                <a href="https://sara01romao.github.io/gesso/" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
-                                
-                            </button> 
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="projectCard" data-aos="fade-right">
-                    <div class="pImg">
-                        <img src="./img/p3.png" alt="">
-                    </div>
-    
-                    <div class="pTxt">
-                        <h2>Selfcare</h2>
-                        <p> Desafio open source  para exibir produtos de uma loja online. </p>
-                        <hr>
-    
-                        <div class="projectIcons">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-    
-                        <div class="projectBtns">
-                            <button>
-                                <a href="https://github.com/Sara01romao/selfcare"  target="_blank"> Código <i class="fab fa-github"></i></a>
-                                
-                            </button>
-    
-                            <!-- <button>
-                                <a href="https://filmariacursoprojeto.netlify.app/" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
-                                
-                            </button> -->
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="projectCard" data-aos="fade-left">
-                    <div class="pImg">
-                        <img src="./img/p5.png" alt="">
-                    </div>
-    
-                    <div class="pTxt">
-                        <h2>IMC Calculadora</h2>
-                        <p> Aplicação que calcula o índice de massa corporal usando a altura e peso. </p>
-                        <hr>
-    
-                        <div class="projectIcons">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                        </div>
-    
-                        <div class="projectBtns">
-                            <button>
-                                <a href="https://github.com/Sara01romao/imc-js"  target="_blank"> Código <i class="fab fa-github"></i></a>
-                                
-                            </button>
-    
-                             <button> 
-                                <a href="https://sara01romao.github.io/imc-js/" target="_blank"></i> Ver <i class="fas fa-chevron-right"></i></a>
-                                
-                            </button> 
-                        </div>
-                    </div>
-    
-                </div>
+
             </div>
-
-
-
     </section>
 
-    <hr>
 
+    <section class="ferramentas">
+        <div class="container">
+            <h2>Tecnologias e Ferramentas</h2>
 
+            <div class="itensTech">
+                <div class="tech">
+                    <i class="fab fa-react"></i>
+                    <p>React Js</p>
+                </div>
+
+                <div class="tech">
+                    <i class="fab fa-js"></i>
+                    <p>Javascript</p>
+                </div>
+
+                <div class="tech">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+
+                
+                
+                <div class="itensTech">
+                    <div class="tech">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
     
+                    <div class="tech">
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+    
+                    <div class="tech">
+                        <i class="fab fa-figma"></i>
+                        <p>Figma</p>
+                    </div>
+    
+                    
+                </div>
+        </div>
+        
+    </section>
 
 
     <section class="container sobre" id="sobre">
+        <div class="container">
             <h2 class="titulo2">Sobre</h2>
             <p class="txtSobre">
                 Formada em Análise e Desenvolvimento de Sistemas, sempre tive interesse pela aréa de TI por possibilitar o desenvolvimento de soluções 
                 para diferentes setores. 
-
+    
                
             </p>
-
-
-
+    
+    
+    
             <div class="infoSobreContainer" style="overflow-x: hidden">
                 <div class="infoSobre" data-aos="fade-right" data-aos-duration="1500">
                     <div class="itemSobre">
@@ -243,8 +215,8 @@
                         <small>Reactjs- em andamento</small>
                     </div>
                 </div>
-
-
+    
+    
                 <div class="infoSobre" data-aos="fade-left" data-aos-duration="2000">
                     <div class="itemSobre">
                         <h4>Front-end</h4>
@@ -253,7 +225,7 @@
                         <small>Bootstrap - intermediário</small><br>
                         <small>ReactJs - básico</small><br>
                         <small>Figma - intermediário</small>
-
+    
                     </div>
     
                    
@@ -264,42 +236,41 @@
                        
                     </div>
                 </div>
-
-
-
+    
+    
+    
             </div>
-
-
-            
-    </section>
-
-
-    <hr>
-
-    <footer id="contato">
-        <h2 class="titulo">Contatos</h2>
-        
-        <div class="icons">
-            <a href="https://github.com/Sara01romao" target="_blank">
-                <i class="fab fa-github-square"></i> 
-            </a>
-
-            <a href="https://www.linkedin.com/in/sara-rom%C3%A3o-abbb8917b/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="mailto:sara-romao@live.com">
-                <i class="fas fa-envelope"></i>
-            </a>
         </div>
-    </footer>
+        
+</section>
 
+
+
+
+<footer id="contatos">
+    <h2 class="titulo">Contatos</h2>
+     <div class="icons">
+        <a href="https://github.com/Sara01romao" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/sara-rom%C3%A3o-abbb8917b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sara-romao@live.com"><i class="fas fa-envelope"></i></a>
+    </div>
 
     
+</footer>
 
+   
+
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script>
-        AOS.init();
-      </script>
+        var swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
    
 </body>
 </html>
