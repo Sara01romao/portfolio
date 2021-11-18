@@ -331,14 +331,9 @@ nav button:hover{
     max-width: 1220px;
     width: 100%;
     height: auto;
-   
-   
-
   }
 
 .swiper-slide {
-
-    
     font-size: 16px;
     line-height: 1.5;
     background-color: var(--greyBg);
@@ -370,6 +365,7 @@ nav button:hover{
 .itemProjeto{
     max-width: 90%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 100%;
     
@@ -378,6 +374,25 @@ nav button:hover{
 
 .imgProjeto{
     flex: 1;
+    
+}
+
+.imgProjeto h3{
+    color: var(--blueTxt);
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: flex;
+    font-weight: 500;
+    font-style: italic;
+    align-items: center;
+   
+}
+.imgProjeto h3::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: var(--blueTxt);
     
 }
 
@@ -391,14 +406,10 @@ nav button:hover{
 .infoProjeto{
     flex: 1;
     padding: 0px 20px;
+    align-self: flex-start;
     
 }
 
-.infoProjeto h3{
-    color: var(--blueTxt);
-    font-size: 22px;
-    margin-bottom: 15px;
-}
 
 .projetos .icons{
     display: flex;
@@ -427,7 +438,7 @@ nav button:hover{
 }
 
 .infoProjeto button{
-    width: 70%;
+    width: 150px;
     height: 40px;
     font-size: 18px;
     font-weight: bold;
@@ -576,8 +587,7 @@ nav button:hover{
 @media screen and (max-width:375px) {
 
         .tech{
-            width: 110px;
-            
+            width: 110px;     
     
         }
 }
@@ -587,7 +597,6 @@ nav button:hover{
     .tech{
         width: 110px;
         margin-right: 0px;
-
 
     }
 }
@@ -677,8 +686,6 @@ nav button:hover{
 .itemSobre{
     max-width: 200px;
     margin-right: 10px;
-    
-   
     
 }
 
