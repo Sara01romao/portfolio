@@ -1,18 +1,21 @@
-let btnOpen = document.querySelector('#open');
-let btnClose = document.querySelector('#close');
+const btnOpen = document.querySelector('#open');
+const btnClose = document.querySelector('#close');
+const menu = document.querySelector('.menu');
 
 btnOpen.addEventListener('click', function (){
-    document.querySelector('.menu').style.display = "block";
+   menu.style.display = "block";
 })
 
 btnClose.addEventListener('click', function (){
-    document.querySelector('.menu').style.display = "none";
+    menu.style.display = "none";
+   
+
 })
 
 
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
-    document.querySelector('.menu').style.display = "none";
+   menu.style.display = "none";
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))

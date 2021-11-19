@@ -134,6 +134,23 @@ nav button:hover{
     color: #ffff;
 }
 
+@keyframes showMenu {
+    from{
+        
+        top: 0%;
+        right: -500px;
+       
+    } 
+    
+    to{
+        
+        top: 0%;
+        right: 0;
+       
+    }
+}
+
+
 
 @media screen and (max-width: 768px) {
     nav button{
@@ -149,8 +166,11 @@ nav button:hover{
         right: 0;
         position: absolute;
         padding: 10px 20px;
+        animation: showMenu 0.5s linear forwards;
         display: none;
     }
+
+   
     
 
     .menu .menuHeader{
@@ -378,20 +398,32 @@ nav button:hover{
 }
 
 .imgProjeto h3{
-    color: var(--blueTxt);
+    color: #a8a8a8fb;
     font-size: 22px;
     margin-bottom: 15px;
     display: flex;
+    align-items: center;
     font-weight: 500;
     font-style: italic;
-    align-items: center;
+ 
    
 }
 .imgProjeto h3::before{
     content: '';
     width: 10px;
-    height: 10px;
+    height: 5px;
+    border-radius: 5px;
     margin-right: 10px;
+    background-color: var(--blueTxt);
+    
+}
+
+.imgProjeto h3::after{
+    content: '';
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
     background-color: var(--blueTxt);
     
 }
