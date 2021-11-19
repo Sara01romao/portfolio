@@ -3,11 +3,12 @@ const btnClose = document.querySelector('#close');
 const menu = document.querySelector('.menu');
 
 btnOpen.addEventListener('click', function (){
+   menu.classList.remove('close')
    menu.style.display = "block";
 })
 
 btnClose.addEventListener('click', function (){
-    menu.style.display = "none";
+    menu.classList.add('close')
    
 
 })

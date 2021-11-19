@@ -136,19 +136,31 @@ nav button:hover{
 
 @keyframes showMenu {
     from{
-        
-        top: 0%;
         right: -500px;
        
     } 
     
     to{
         
-        top: 0%;
         right: 0;
        
     }
 }
+
+@keyframes hideMenu {
+    from{
+        right: 0px;
+       
+    } 
+    
+    to{
+        
+        right: -1000px;
+       
+    }
+}
+
+
 
 
 
@@ -170,6 +182,10 @@ nav button:hover{
         display: none;
     }
 
+    .menu.close{
+        animation: hideMenu 0.5s linear forwards;
+        
+    }
    
     
 
