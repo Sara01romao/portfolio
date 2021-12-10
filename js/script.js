@@ -5,9 +5,6 @@ const closeLine1=document.querySelector('.close-icon1');
 const closeLine2=document.querySelector('.close-icon2');
 const lineMenu = document.querySelector('.line-menu');
 
-
-
-
 openMenu.addEventListener('click', function(){
    
     menu.classList.toggle('open')
@@ -17,26 +14,6 @@ openMenu.addEventListener('click', function(){
 
    
 })
-
-
-
-
-
-
-// const btnOpen = document.querySelector('#open');
-// const btnClose = document.querySelector('#close');
-// const menu = document.querySelector('.menu');
-
-// btnOpen.addEventListener('click', function (){
-//    menu.classList.remove('close')
-//    menu.style.display = "block";
-// })
-
-// btnClose.addEventListener('click', function (){
-//     menu.classList.add('close')
-   
-
-// })
 
 
 const navLink = document.querySelectorAll('.navLink')
