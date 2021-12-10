@@ -4,268 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- swiper -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <title>Portfólio </title>
+    <meta name="description" content="Portfólio Desenvolvedora Front-End">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>   
-            <a href=""><img src="./img/logo.svg" alt="logo"></a>
-           
-
-            <div class="menu">
-                <div class="menuHeader">
-                   
-                    <button id="close"><i class="fas fa-close"></i></button>
-                </div>
-                <ul>
-                    <li><a href="#home" class="nav__link">Home</a></li>
-                    <li><a href="#projetos" class="nav__link">Projetos</a></li>
-                    <li><a href="#sobre" class="nav__link">Sobre</a></li>
-                    <li><a href="#contatos" class="nav__link">Contatos</a></li>
-                </ul>
     
-               
-            </div>
-
-            <button id="open"><i class="fas fa-bars"></i></button>
+    <header>
+        <nav>
+            <a href="#"><img class="logo" src="./img/logo.svg" alt="logo menu"></a>
+            <ul class="menu">
+                <li class="navLink"><a href="#home">Home</a></li>
+                <li class="navLink"><a href="#projetos">Projetos</a></li>
+                <li class="navLink"><a href="#sobre">Sobre</a></li>
+                <li class="navLink"><a href="#contatos">Contatos</a></li>
+            </ul>
+            
+            <svg class="open-menu" width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-menu" d="M21.0938 12.5H0.78125C0.57405 12.5 0.375336 12.5823 0.228823 12.7288C0.0823101 12.8753 0 13.074 0 13.2812L0 14.8438C0 15.051 0.0823101 15.2497 0.228823 15.3962C0.375336 15.5427 0.57405 15.625 0.78125 15.625H21.0938C21.301 15.625 21.4997 15.5427 21.6462 15.3962C21.7927 15.2497 21.875 15.051 21.875 14.8438V13.2812C21.875 13.074 21.7927 12.8753 21.6462 12.7288C21.4997 12.5823 21.301 12.5 21.0938 12.5ZM21.0938 6.25H0.78125C0.57405 6.25 0.375336 6.33231 0.228823 6.47882C0.0823101 6.62534 0 6.82405 0 7.03125L0 8.59375C0 8.80095 0.0823101 8.99966 0.228823 9.14618C0.375336 9.29269 0.57405 9.375 0.78125 9.375H21.0938C21.301 9.375 21.4997 9.29269 21.6462 9.14618C21.7927 8.99966 21.875 8.80095 21.875 8.59375V7.03125C21.875 6.82405 21.7927 6.62534 21.6462 6.47882C21.4997 6.33231 21.301 6.25 21.0938 6.25ZM21.0938 0H0.78125C0.57405 0 0.375336 0.0823104 0.228823 0.228823C0.0823101 0.375336 0 0.57405 0 0.78125L0 2.34375C0 2.55095 0.0823101 2.74966 0.228823 2.89618C0.375336 3.04269 0.57405 3.125 0.78125 3.125H21.0938C21.301 3.125 21.4997 3.04269 21.6462 2.89618C21.7927 2.74966 21.875 2.55095 21.875 2.34375V0.78125C21.875 0.57405 21.7927 0.375336 21.6462 0.228823C21.4997 0.0823104 21.301 0 21.0938 0Z" fill="black"/>
+                <rect class="close-icon1" x="21.9651" y="2.43457" width="24.4514" height="2.92455" rx="1" transform="rotate(146.3 21.9651 2.43457)" fill="black"/>
+                <rect class="close-icon2" x="20.7908" y="16.1074" width="24.8789" height="2.92455" rx="1" transform="rotate(-146.687 20.7908 16.1074)" fill="black"/>
+            </svg>
         </nav>
-       
     </header>
 
-    <section class="home" id="home">
-        <div class="container">
-            <div>
+    <main class="home" id="home">
+        <div class="home-container container">
+
+            <div class="home-txt">
                 <h1>Sara Romão</h1>
-                <p class="infoHome">Desenvolvedora Front-end /UI</p>
-                <p class="txtHome">Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos.</p>
+                <p class="home-info">Desenvolvedora Fron-End</p>
+                <p class="home-bemVindo">Bem-vindo(a) ao meu portfólio, conheça alguns projetos desenvolvidos.</p>
+            
             </div>
 
-            <button><a href="#projetos"><i class="fas fa-chevron-down"></i></a></button>
+            <img src="./img/img-home.svg" alt="figura computador">
+            
         </div>
-           
-    </section>
+
+        <button><a href="#projetos"><img src="./img/arrow.svg" alt="seta"> </a></button>
+
+    </main>
 
 
     <section class="projetos" id="projetos">
-            <div>
-                <h2>Projetos</h2>
+        <div class="projetos-container container">
+            <h2 class="titulos">Projetos</h2>
+            <div class="projeto-item">
+                <img src="./img/projeto1.png" alt="">
+                <div class="projeto-info">
+                    <h3>Loja Natalina</h3>
+                    <p>
+                        Para o desenvolvimento foi usado <strong> React Js </strong>com Context Api para simplicar alteração
+                        dos estados comuns entre as funcionalidades do carrinho.
+                    </p>
+                    <div class="projeto-links">
+                        <a href="https://github.com/Sara01romao/loja-natal" target="_blank">Repositório</a>
+                        <a href="https://lojanatal.netlify.app/" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
 
-                <div>
-                     <!-- Swiper -->
-                     <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                              <div class="itemProjeto">
-                                    <div class="imgProjeto">
-                                        <h3>Catálogo de compra </h3>
-                                        <img src="./img/p0.png" alt="Projeto 1">
-                                        
-                                    </div>
-
-                                    <div class="infoProjeto">
-                                        <div class="icons">
-                                            <i class="fab fa-react"></i>
-                                            <i class="fab fa-css3-alt"></i>
-                                            <img  class="sc-icon" src="./img//icon.svg" alt="">
-                                        </div>
-                                        <div class="btns">
-                                            <button class="repo"><a href="https://github.com/Sara01romao/loja-natal" target="_blank">Repositório</a></button>
-                                            <button class="ver"><a href="https://lojanatal.netlify.app/" target="_blank">Acessar</a></button>
-                                        </div>
-                                    </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                                <div class="itemProjeto">
-                                    <div class="imgProjeto">
-                                        <h3>Gessos</h3>
-                                        <img src="./img/p2.png" alt="Projeto 2">
-                                        
-                                    </div>
-
-                                    <div class="infoProjeto">                                        
-                                        <div class="icons">
-                                            <i class="fab fa-html5"></i>
-                                            <i class="fab fa-css3-alt"></i>
-                                            <i class="fab fa-js"></i>
-                                        </div>
-                                        <div class="btns">
-                                            <button class="repo"><a href="https://github.com/Sara01romao/gesso"  target="_blank">Repositório</a></button>
-                                            <button class="ver"><a href="https://sara01romao.github.io/gesso/"target="_blank">Acessar</a></button>
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-
-                          <div class="swiper-slide">
-                                <div class="itemProjeto">
-                                   
-                                    <div class="imgProjeto">
-                                        <h3>Fone Landing Page - DevChallenge</h3>
-                                        <img src="./img/p3.png" alt="Projeto 2">
-                                        
-                                    </div>
-
-                                    <div class="infoProjeto">                                        
-                                        <div class="icons">
-                                            <i class="fab fa-bootstrap"></i>
-                                            <i class="fab fa-css3-alt"></i>
-                                            <i class="fab fa-js"></i>
-                                        </div>
-                                        <div class="btns">
-                                            <button class="repo"><a href="https://github.com/Sara01romao/fone-landing-page"   target="_blank">Repositório</a></button>
-                                            <!-- <button class="ver"><a href="https://sara01romao.github.io/gesso/"target="_blank">Acessar</a></button> -->
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-                         
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                      </div>
+            <div class="projeto-item item2">
+                
+                <div class="projeto-info">
+                    <h3>Landing Page</h3>
+                    <p>
+                        Projeto tem como proposta uma página web com 
+                        informações dos serviços com gesso da empresa.
+                        Tecnologias usadas <strong>HTML, CSS</strong> e <strong>JavaScrip</strong>.
+                    </p>
+                    <div class="projeto-links">
+                        <a href="https://github.com/Sara01romao/gesso"  target="_blank">Repositório</a>
+                        <a href="https://sara01romao.github.io/gesso/"target="_blank">Link</a>
+                    </div>
                 </div>
 
+                <img src="./img/projeto2.png" alt="Landing Page">
             </div>
+
+            <div class="projeto-item">
+                <img src="./img/projeto3.png" alt="">
+                <div class="projeto-info">
+                    <h3>Calculadora</h3>
+                    <p>
+                        Projeto simples desenvolvido com <strong>HTML, CSS</strong> reponsaveis pela parte visual e <strong>JavaScrip</strong>
+                        para fazer o cálculo com os dados passado.
+                    </p>
+                    <div class="projeto-links">
+                        <a href="https://github.com/Sara01romao/imc-js"  target="_blank">Repositório</a>
+                        <a href="https://sara01romao.github.io/imc-js/"target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
-    <section class="ferramentas">
-        <div class="container">
-            <h2>Tecnologias e Ferramentas</h2>
+    <section class="sobre" id="sobre">
+        <h2 class="titulos">Sobre</h2>
+        <p class="sobre-frase">
+            Sempre tive interesse pela aréa de TI por possibilitar o desenvolvimento <br> de soluções para diferentes setores.
+        </p>
+        <div class="sobre-container container">
+            <div class="sobre-formacao">
+                <h4 >Formação</h4>
+                <div class="sobre-info">
+                    <h5 class="sobre-subtitulo">Técnologo</h5>
+                    <ul>
+                        <li class="sobre-txt">Análise e Desenvolvimento <br> de Sistemas <span>2017-2020</span></li>
+                        <li>FATEC- Presidente Prudente</li>
+                    </ul>
+                </div>
+            </div>
 
-            <div class="itensTech">
-                <div class="tech">
-                    <i class="fab fa-react"></i>
-                    <p>React Js</p>
+            <div class="sobre-curso">
+                <img src="./img/img-sobre.svg" alt="">
+                <div class="sobre-info">
+                    <h5 class="sobre-subtitulo">Cursos Intensivo</h5>
+                    <ul>
+                        <li class="sobre-txt">BootStrap <span>40h</span></li>
+                        <li class="sobre-txt">React Js BootCamp <span>64h</span></li>
+                    </ul>
                 </div>
 
-                <div class="tech">
-                    <i class="fab fa-js"></i>
-                    <p>Javascript</p>
-                </div>
-
-                <div class="tech">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML</p>
-                </div>
-
-                
-                
-                <div class="itensTech">
-                    <div class="tech">
-                        <i class="fab fa-css3-alt"></i>
-                        <p>CSS3</p>
-                    </div>
-    
-                    <div class="tech">
-                        <i class="fab fa-bootstrap"></i>
-                        <p>Bootstrap</p>
-                    </div>
-    
-                    <div class="tech">
-                        <i class="fab fa-figma"></i>
-                        <p>Figma</p>
-                    </div>
-    
-                    
-                </div>
+            </div>
         </div>
-        
+
     </section>
 
 
-    <section class="container sobre" id="sobre">
-        <div class="container">
-            <h2 class="titulo2">Sobre</h2>
-            <p class="txtSobre">
-                Formada em Análise e Desenvolvimento de Sistemas, sempre tive interesse pela aréa de TI por possibilitar o desenvolvimento de soluções 
-                para diferentes setores. 
-    
-               
-            </p>
-    
-    
-    
-            <div class="infoSobreContainer" style="overflow-x: hidden">
-                <div class="infoSobre" data-aos="fade-right" data-aos-duration="1500">
-                    <div class="itemSobre">
-                        <h4>2020</h4>
-                        <small>Análise e Desenvolvimento de Sistemas- Fatec</small>
-                    </div>
-    
-                   
-    
-                    <div class="itemSobre">
-                        <h4>2021</h4>
-                        <small>Bootstrap- Origamid</small><br>
-                        <small>Figma- Cursae</small><br>
-                        <small>Reactjs- em andamento</small>
-                    </div>
-                </div>
-    
-    
-                <div class="infoSobre" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="itemSobre">
-                        <h4>Front-end</h4>
-                        <small>HTML / CSS - intermediário</small><br>
-                        <small>Javascript- intermediário</small><br>
-                        <small>Bootstrap - intermediário</small><br>
-                        <small>ReactJs - básico</small><br>
-                        <small>Figma - intermediário</small>
-    
-                    </div>
-    
-                   
-    
-                    <div class="itemSobre">
-                        <h4>Back-end</h4>
-                        <small>Mysql-básico</small><br>
-                       
-                    </div>
-                </div>
-    
-    
-    
-            </div>
+    <footer id="contatos">
+        <h2 class="titulos">Contatos</h2>
+        <div class="contatos-container">
+            <a href="https://github.com/Sara01romao" target="_blank"><img src="./img/github.svg" alt="github"></a>
+            <a href="mailto:sara-romao@live.com"><img src="./img/email.svg" alt="email"></a>
+            <a href="https://www.linkedin.com/in/sara-rom%C3%A3o/" target="_blank" ><img src="./img/linkedin.svg" alt="linkedin"></a>
         </div>
+    </footer>
+
+<script src="./js/script.js"></script>
+
         
-</section>
-
-
-
-
-<footer id="contatos">
-    <h2 class="titulo">Contatos</h2>
-     <div class="icons">
-        <a href="https://github.com/Sara01romao" target="_blank"><i class="fab fa-github-square"></i></a>
-        <a href="https://www.linkedin.com/in/sara-rom%C3%A3o-abbb8917b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:sara-romao@live.com"><i class="fas fa-envelope"></i></a>
-    </div>
-
-    
-</footer>
-
-   
-
-    <script src="./js/script.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            centeredSlides: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-    </script>
-   
 </body>
 </html>
