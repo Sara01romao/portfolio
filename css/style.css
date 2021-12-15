@@ -164,7 +164,24 @@ nav ul li a:hover {
   }
 }
 
-/**/
+.btnAncora {
+  width: 30px;
+  height: 30px;
+  background-color: #6464649f;
+  right: 0;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.btnAncora svg {
+  transform: rotate(180deg);
+}
+
+/*HOME*/
 main {
   height: 100vh;
   display: flex;
