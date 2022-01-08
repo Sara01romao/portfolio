@@ -171,16 +171,22 @@ nav ul li a:hover {
   right: 0;
   position: fixed;
   bottom: 0px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
+  transition: 0.8s;
+  
 }
 
 .btnAncora svg {
   transform: rotate(180deg);
 }
 
+.btnAncora.active{
+  
+  display: flex;
+}
 /*HOME*/
 main {
   height: 100vh;
