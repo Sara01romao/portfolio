@@ -32,18 +32,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 const btnScroll = document.querySelector('.btnAncora');
 
-// function scroll(){
-//     if(window.scrollY > 625){
-//         btnScroll.classList.add('active')
-       
-//     }else{
-//         btnScroll.classList.remove('active')
-//     }
-   
-// }
+
 
 window.addEventListener("scroll", function(){
-    if(window.scrollY > 625){
+    if(window.scrollY > 525){
         btnScroll.classList.add('active')
        
     }else{
