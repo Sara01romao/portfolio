@@ -495,21 +495,42 @@ footer .titulos {
   padding-top: 30px;
 }
 
-.contatos-container {
-  width: 150px;
-  margin: 0 auto;
+
+
+/**/
+.cards-footer{
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.card-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contatos-container a {
+.card-footer img{
+  width: 40px;
+  
+}
+
+.icons-footer{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.cards-footer  a {
+  color: #2e2e2e;
   cursor: pointer;
   transition: all 0.5s;
   opacity: 0.8;
 }
 
-.contatos-container a:hover {
-  transform: scale(1.5);
+.cards-footer a:hover {
+  transform: scale(1.1);
   opacity: 1;
 }
