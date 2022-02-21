@@ -298,8 +298,7 @@ main button {
 .projeto-card {
   position: relative;
   background-color: #fff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  box-shadow: 2px 7px 10px -3px #8f8989;
 }
 
 .projeto-card p {
@@ -312,9 +311,6 @@ main button {
 
 .img-projeto {
   max-width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  
 }
 
 .info-projeto {
