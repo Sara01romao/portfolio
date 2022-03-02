@@ -123,7 +123,6 @@ nav ul li a:hover {
   }
 
   nav .menu {
-   
     position: absolute;
     flex-direction: column;
     background: linear-gradient(
@@ -302,7 +301,7 @@ main button {
   transition: all 0.3s ease;
 }
 
-.projeto-card:hover{
+.projeto-card:hover {
   box-shadow: 8px 10px 10px -3px #4ebb79;
 }
 
@@ -527,4 +526,21 @@ footer .titulos {
   opacity: 1;
 }
 
+.animeLeft {
+  transform: translateX(-150px);
+  opacity: 0;
+  animation: anime 0.8s forwards;
+}
 
+.animeUp {
+  transform: translateY(150px);
+  opacity: 0;
+  animation: anime 0.8s forwards;
+}
+
+@keyframes anime {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
