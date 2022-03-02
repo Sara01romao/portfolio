@@ -123,7 +123,7 @@ nav ul li a:hover {
   }
 
   nav .menu {
-    display: none;
+   
     position: absolute;
     flex-direction: column;
     background: linear-gradient(
@@ -135,15 +135,15 @@ nav ul li a:hover {
     top: 0;
     right: 0;
     padding-top: 70px;
-    width: 200px;
-    transition: all 0.5s;
+    width: 0px;
+    transition: width 0.3s ease-in;
     animation: list-menu 0.8s ease-in forwards;
     z-index: 2;
     cursor: pointer;
   }
 
   nav .menu.open {
-    display: block;
+    width: 200px;
   }
 
   nav ul li {
@@ -298,7 +298,12 @@ main button {
 .projeto-card {
   position: relative;
   background-color: #fff;
-  box-shadow: 2px 7px 10px -3px #8f8989;
+  box-shadow: 2px 7px 10px -3px #4ebb79;
+  transition: all 0.3s ease;
+}
+
+.projeto-card:hover{
+  box-shadow: 8px 10px 10px -3px #4ebb79;
 }
 
 .projeto-card p {
@@ -521,3 +526,5 @@ footer .titulos {
   transform: scale(1.1);
   opacity: 1;
 }
+
+
