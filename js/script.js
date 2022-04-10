@@ -5,7 +5,7 @@ const closeLine1 = document.querySelector('.close-icon1');
 const closeLine2 = document.querySelector('.close-icon2');
 const lineMenu = document.querySelector('.line-menu');
 const cards1 = document.querySelector('.cards-list1');
-const cards2 = document.querySelector('.cards-list2');
+const projetos = document.querySelector('.projetos-container')
 
 openMenu.addEventListener('click', function () {
 
@@ -37,41 +37,25 @@ const btnScroll = document.querySelector('.btnAncora');
 
 
 
-function animeLeft(){
+function animeUp(){
     window.addEventListener("scroll", function () {
         if (window.scrollY > 150) {
     
     
-            cards1.classList.add('animeLeft');
+            cards1.classList.add('animeUp');
     
         } else {
     
-            cards1.classList.remove('animeLeft');
+            cards1.classList.remove('animeUp');
     
         }
     })
 }
 
 
-animeLeft()
-
-
-function animeUp(){
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 700) {
-    
-    
-            cards2.classList.add('animeUp');
-    
-        } else {
-    
-            cards2.classList.remove('animeUp');
-    
-        }
-    })
-    
-}
 animeUp()
+
+
 
 
 

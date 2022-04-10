@@ -239,7 +239,7 @@ main button {
   position: absolute;
   bottom: 50px;
   cursor: pointer;
-  animation: animaArrow 1s ease-in infinite;
+  animation: animaArrow 1.2s ease infinite;
 }
 
 @media screen and (max-width: 768px) {
@@ -342,17 +342,16 @@ main button {
   font-size: 1rem;
 }
 
-.cards-list2 {
+ .cards-list1{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  gap: 20px;
+  gap: 100px 20px;
 
   margin-top: 80px;
 }
 
-.cards-list1 h3,
-.cards-list2 h3 {
+.cards-list1 h3 {
   font-size: 1rem;
   color: #37474f;
 }
@@ -363,11 +362,7 @@ main button {
     gap: 50px;
   }
 
-  .cards-list2 {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    margin-top: 50px;
-  }
+ 
 }
 
 /*Sobre*/
