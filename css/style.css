@@ -405,8 +405,17 @@ header nav button img:hover {
 
 /*footer*/
 footer{
-    background: #96dfff;;
+    background: #96dfff;
+    position: relative;
     
+    
+}
+
+.footerSvg{
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
 }
 
 footer ul{
@@ -423,3 +432,15 @@ footer a{
     color: #52595F;
 }
 
+.infoFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.infoFooter .icons{
+
+    display: flex;
+    gap: 20px;
+}
