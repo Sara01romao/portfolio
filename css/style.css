@@ -80,8 +80,24 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
+header nav button line {
+  display: none;
+}
+
+header nav button.open path {
+  display: none;
+}
+header nav button.open line {
+  display: block;
+}
+header nav button.open {
+  transition: 0.8s ease;
+  transform: rotate(180deg);
+}
 
 header nav button {
+  transform: rotate(0deg);
+  transition: 0.8s ease;
   border: none;
   background-color: rgba(0, 0, 255, 0);
   cursor: pointer;

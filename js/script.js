@@ -5,6 +5,7 @@ const navLink = document.querySelectorAll(".navLink");
 
 menuOpen.addEventListener("click", () => {
   menu.classList.toggle("open");
+  menuOpen.classList.toggle("open");
 
   if (menu.classList.contains("open")) {
     console.log("open");
@@ -16,5 +17,6 @@ menuOpen.addEventListener("click", () => {
 
 function linkAction() {
   menu.classList.toggle("open");
+  menuOpen.classList.toggle("open");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
