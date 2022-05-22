@@ -170,15 +170,16 @@ header nav button img:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   max-width: 800px;
   margin: 0 auto;
 }
+
 
 .homeTxt h1 {
   font-family: var(--font-title);
   font-weight: 400;
   font-size: 4rem;
+  animation: animeZoom 0.5s ease-in forwards;
 }
 
 .homeTxt h2 {
@@ -186,13 +187,16 @@ header nav button img:hover {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 50px;
+  animation: animeZoom 0.8s ease-in forwards;
 }
 
 .homeTxt p {
   max-width: 400px;
   text-align: center;
   font-size: 1.2rem;
+  animation: animeZoom 1s ease-in forwards;
 }
+
 
 .homeTxt .btnHome {
   width: 50px;
@@ -230,6 +234,8 @@ header nav button img:hover {
   position: absolute;
   right: 100px;
   bottom: 100px;
+  animation: animeRight 1s ease-in forwards;
+  
 }
 
 .homeTxt .social svg:hover path {
@@ -465,4 +471,45 @@ footer svg:hover path {
 .infoFooter .icons {
   display: flex;
   gap: 20px;
+}
+
+/*anime*/
+.animeUp {
+  transform: translateY(150px);
+  opacity: 0;
+  animation: animeUp 0.8s forwards;
+}
+
+@keyframes animeUp {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+
+
+@keyframes animeZoom {
+  from{
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes animeRight {
+  from{
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
