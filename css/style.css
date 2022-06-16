@@ -33,16 +33,16 @@ li {
   padding: 20px 40px;
 }
 
-.homeSection header nav button {
-  display: none;
-}
-
 .homeSection header nav {
+  max-width: 1279px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.homeSection header nav button {
+  display: none;
+}
 .homeSection .menu {
   display: flex;
   align-items: center;
@@ -77,9 +77,7 @@ li {
 
 .closeIcon {
   display: none;
- 
 }
-
 
 @media screen and (max-width: 768px) {
   .logo {
@@ -87,7 +85,8 @@ li {
   }
   .homeSection header {
     align-items: initial;
-    padding: 5px 20px;
+    padding: 0px 20px;
+    height: 80px;
   }
   .menu-mobile {
     display: flex;
@@ -96,13 +95,12 @@ li {
     padding: 20px 10px;
   }
 
-  .menuOpen{
+  .menuOpen {
     transform: rotate(0deg);
     transition: 0.8s all;
   }
 
-
-  .menuOpen.open{
+  .menuOpen.open {
     transition: 0.8s all;
     transform: rotate(180deg);
   }
@@ -121,7 +119,6 @@ li {
     display: none;
   }
 
-  
   .homeSection header nav {
     overflow: hidden;
     align-items: initial;
@@ -188,4 +185,54 @@ li {
   .homeSection .menu a:hover::after {
     width: initial;
   }
+}
+
+/*HOME*/
+
+.home {
+  height: calc(100vh - 80px);
+  /*  border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-content {
+  max-width: 1279px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.home h1 {
+  color: var(--color1);
+  font-size: 3rem;
+}
+
+.home p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.home .txt a {
+  margin-top: 50px;
+  color: rgb(199, 199, 199);
+  font-size: 1.2rem;
+  border: 1px solid #4c9700;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt a:hover {
+  background-color: #1a1c25;
+  color: rgb(255, 255, 255);
+  border: 1px solid var(--color1);
 }
