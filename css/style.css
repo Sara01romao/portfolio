@@ -1,238 +1,283 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
 :root {
-  --bg1: #282a36;
-  --color1: #70e000;
+    --bg1: #282a36;
+    --color1: #70e000;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg1);
-  font-family: "Poppins", sans-serif;
+    background-color: var(--bg1);
+    font-family: "Poppins", sans-serif;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 .homeSection {
-  height: 100vh;
+    height: 100vh;
 
-  background: #282a36;
+    background: #282a36;
 }
 
 .homeSection header {
-  padding: 20px 40px;
+    padding: 20px 20px;
 }
 
 .homeSection header nav {
-  max-width: 1279px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .homeSection header nav button {
-  display: none;
+    display: none;
 }
 .homeSection .menu {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .homeSection .menu a {
-  color: rgb(182, 182, 182);
-  font-size: 1rem;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.homeSection .menu a:hover {
-  transition: 0.3s;
-  color: #fff;
-}
-
-.homeSection .menu a::after {
-  content: "";
-  width: 0%;
-  height: 1px;
-  background: var(--color1);
-  transition: 0.3s;
-}
-
-.homeSection .menu a:hover::after {
-  width: 100%;
-}
-
-.closeIcon {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    height: 40px;
-  }
-  .homeSection header {
-    align-items: initial;
-    padding: 0px 20px;
-    height: 80px;
-  }
-  .menu-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-  }
-
-  .menuOpen {
-    transform: rotate(0deg);
-    transition: 0.8s all;
-  }
-
-  .menuOpen.open {
-    transition: 0.8s all;
-    transform: rotate(180deg);
-  }
-
-  .menuOpen.open .closeIcon {
-    transition: 0.8s all;
-    transform: scale(1);
-    display: block;
-  }
-
-  .menuOpen.open path {
-    display: none;
-  }
-
-  .closeIcon {
-    display: none;
-  }
-
-  .homeSection header nav {
-    overflow: hidden;
-    align-items: initial;
-    margin-top: 10px;
-
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    justify-content: initial;
-  }
-  .homeSection header nav button {
-    display: block;
-    height: 30px;
-    border: none;
-    background: var(--bg1);
-  }
-
-  .homeSection .menu {
-    border: blue;
-    display: none;
-    gap: 0px;
-  }
-
-  .homeSection .menu.open {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    padding: 10px;
-    animation: right 0.8s ease-out forwards;
-  }
-
-  @keyframes right {
-    from {
-      opacity: 0;
-      transform: translateX(150px);
-    }
-    to {
-      opacity: 1;
-      transform: initial;
-    }
-  }
-
-  .homeSection .menu li {
-    width: 100%;
-
-    border-bottom: 1px solid #383b4b;
-  }
-
-  .homeSection .menu li:hover {
-    background-color: #1a1c25;
-  }
-  .homeSection .menu a {
-    padding: 25px 0px;
     color: rgb(182, 182, 182);
-    height: 40px;
     font-size: 1rem;
     font-weight: 600;
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    flex-direction: column;
+    position: relative;
+}
 
-  .homeSection .menu a:hover::after {
-    width: initial;
-  }
+.homeSection .menu a:hover {
+    transition: 0.3s;
+    color: #fff;
+}
+
+.homeSection .menu a::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: var(--color1);
+    transition: 0.3s;
+}
+
+.homeSection .menu a:hover::after {
+    width: 100%;
+}
+
+.closeIcon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        height: 40px;
+    }
+    .homeSection header {
+        align-items: initial;
+        padding: 0px 20px;
+        height: 80px;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .menuOpen {
+        transform: rotate(0deg);
+        transition: 0.8s all;
+    }
+
+    .menuOpen.open {
+        transition: 0.8s all;
+        transform: rotate(180deg);
+    }
+
+    .menuOpen.open .closeIcon {
+        transition: 0.8s all;
+        transform: scale(1);
+        display: block;
+    }
+
+    .menuOpen.open path {
+        display: none;
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .homeSection header nav {
+        overflow: hidden;
+        align-items: initial;
+        margin-top: 10px;
+        padding: 10px 0px;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: initial;
+    }
+    .homeSection header nav button {
+        display: block;
+        height: 30px;
+        border: none;
+        background: var(--bg1);
+    }
+
+    .homeSection .menu {
+        border: blue;
+        display: none;
+        gap: 0px;
+        background-color: #282a36;
+    }
+
+    .homeSection .menu.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        animation: right 0.8s ease-out forwards;
+    }
+
+    @keyframes right {
+        from {
+            opacity: 0;
+            transform: translateX(150px);
+        }
+        to {
+            opacity: 1;
+            transform: initial;
+        }
+    }
+
+    .homeSection .menu li {
+        width: 100%;
+        border-bottom: 1px solid #383b4b;
+    }
+
+    .homeSection .menu li:hover {
+        background: #383b4b;
+    }
+    .homeSection .menu a {
+        padding: 25px 0px;
+        color: rgb(182, 182, 182);
+        height: 40px;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homeSection .menu a:hover::after {
+        width: initial;
+    }
 }
 
 /*HOME*/
 
 .home {
-  height: calc(100vh - 80px);
-  /*  border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    height: calc(100vh - 80px);
+    /*  border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home-content {
-  max-width: 1279px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 40px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .home h1 {
-  color: var(--color1);
-  font-size: 3rem;
+    color: var(--color1);
+    font-size: 3rem;
 }
 
 .home p {
-  color: #fff;
-  font-size: 1.3rem;
+    color: #fff;
+    font-size: 1.3rem;
+    max-width: 500px;
 }
 
 .home .txt a {
-  margin-top: 50px;
-  color: rgb(199, 199, 199);
-  font-size: 1.2rem;
-  border: 1px solid #4c9700;
-  width: 150px;
-  height: 40px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin-top: 50px;
+    color: rgb(199, 199, 199);
+    font-size: 1.2rem;
+    border: 1px solid #4c9700;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .txt a:hover {
-  background-color: #1a1c25;
-  color: rgb(255, 255, 255);
-  border: 1px solid var(--color1);
+    background-color: #1a1c25;
+    color: rgb(255, 255, 255);
+    border: 1px solid var(--color1);
+}
+
+.home-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-content ul svg:hover path {
+    fill-opacity: 1;
+    fill: #6f8191;
+}
+
+@media screen and (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+    }
+
+    .home-content ul {
+        display: none;
+    }
+
+    .home h1 {
+        color: var(--color1);
+        font-size: 1.5rem;
+    }
+
+    .home p {
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homeSection header {
+        padding: initial;
+    }
+    .menu-mobile {
+        padding: 20px 20px;
+    }
 }
