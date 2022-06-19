@@ -42,6 +42,10 @@ li {
     justify-content: space-between;
 }
 
+.logo{
+    animation: fade 1s ease-in forwards;
+}
+
 .homeSection header nav button {
     display: none;
 }
@@ -152,6 +156,7 @@ li {
         width: 100%;
         height: 100vh;
         animation: right 0.8s ease-out forwards;
+        z-index: 1;
     }
 
     @keyframes right {
@@ -223,6 +228,10 @@ li {
     max-width: 500px;
 }
 
+.home .txt {
+    animation: fade 1s ease-in-out forwards;
+}
+
 .home .txt a {
     margin-top: 50px;
     color: rgb(199, 199, 199);
@@ -254,21 +263,22 @@ li {
     fill: #6f8191;
 }
 
-.detalhe1{
+.detalhe1 {
     max-width: 200px;
     height: 200px;
     position: absolute;
     top: -80px;
+    animation: fade 1s ease-in-out forwards;
 }
 
-.detalhe{
+.detalhe {
     max-width: 400px;
     height: 200px;
     position: absolute;
     right: 0;
     bottom: 0;
+    animation: fade 0.8s ease-in-out forwards;
 }
-
 
 @media screen and (max-width: 768px) {
     .home-content {
@@ -280,25 +290,22 @@ li {
         display: none;
     }
 
-
     .home h1 {
-        
         font-size: 1.7rem;
     }
 
     .home p {
-        
         font-size: 1.2rem;
     }
 
-    .detalhe1{
+    .detalhe1 {
         max-width: 100px;
         height: 120px;
         position: absolute;
         top: -40px;
     }
-    
-    .detalhe{
+
+    .detalhe {
         max-width: 400px;
         height: 150px;
         position: absolute;
@@ -311,8 +318,7 @@ li {
     .homeSection header {
         padding: initial;
     }
-   
-    
+
     .menu-mobile {
         padding: 20px 20px;
     }
@@ -325,15 +331,15 @@ li {
         color: #fff;
         font-size: 1rem;
     }
-   
-    .detalhe1{
+
+    .detalhe1 {
         max-width: 100px;
         height: 100px;
         position: absolute;
         top: -40px;
     }
-    
-    .detalhe{
+
+    .detalhe {
         max-width: 400px;
         height: 100px;
         position: absolute;
@@ -342,5 +348,13 @@ li {
     }
 }
 
-
-
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: initial;
+    }
+}
