@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
 :root {
-    --bg1: #282a36;
+    --bg1:#151627;
+    --bg2:#1d1e31;
+   
     --color1: #70e000;
 }
 
@@ -48,7 +50,7 @@ li {
 .homeSection {
     height: 100vh;
 
-    background: #282a36;
+   
 }
 
 .homeSection header {
@@ -234,7 +236,7 @@ li {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 100px 20px 0px;
 
     display: flex;
     justify-content: space-between;
@@ -375,7 +377,7 @@ li {
 
 /*ABOUT*/
 .about {
-    background: #1e2227;
+    background: var(--bg2);
     color: rgb(235, 235, 235);
     padding: 30px 40px;
 }
