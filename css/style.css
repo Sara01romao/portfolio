@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
 :root {
-    --bg1:#151627;
-    --bg2:#1d1e31;
-   
+    --bg1: #151627;
+    --bg2: #1d1e31;
+
     --color1: #70e000;
 }
 
@@ -13,11 +13,11 @@
 }
 html {
     scroll-behavior: smooth;
-  }
-  
-  :target {
+}
+
+:target {
     scroll-margin-top: 100px;
-  }
+}
 
 body {
     background-color: var(--bg1);
@@ -49,14 +49,12 @@ li {
 
 .homeSection {
     height: 100vh;
-
-   
 }
 
 .homeSection header {
     padding: 0px 20px;
     position: fixed;
-    background: #282a36;
+    background: var(--bg1);
     width: 100%;
     z-index: 1;
 }
@@ -119,7 +117,7 @@ li {
     }
     .homeSection header {
         align-items: initial;
-        padding: 0px 20px;
+        padding: initial;
         height: 100px;
     }
 
@@ -174,7 +172,7 @@ li {
         border: blue;
         display: none;
         gap: 0px;
-        background-color: #282a36;
+        background-color: var(--bg1);
     }
 
     .homeSection .menu.open {
@@ -236,7 +234,7 @@ li {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 20px 0px;
+    padding: 100px 20px 0px 40px;
 
     display: flex;
     justify-content: space-between;
@@ -474,9 +472,6 @@ li {
     grid-template-columns: 1.5fr 1fr;
 }
 
-
-
-
 .card h4 {
     font-size: 1.3rem;
     font-weight: 400;
@@ -489,7 +484,7 @@ li {
 
 .card-txt {
     color: #fff;
-    background: #1e2227;
+    background: linear-gradient(180deg, #1e2227, #1c2027, #1a1f27, #181d28, #171b25, #161a28, #151827, #151627);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,7 +492,8 @@ li {
     gap: 20px;
     border-radius: 5px;
     position: relative;
-    top: -20px;
+    border:1px solid #1d311e;
+ 
 }
 .card-txt p {
     height: 80px;
@@ -545,6 +541,7 @@ li {
         position: initial;
         top: 0px;
         z-index: initial;
+        padding: 20px;
     }
     .cards-content .card:nth-child(1) {
         grid-template-columns: 1fr;
@@ -559,19 +556,16 @@ li {
     .cards-content .card:nth-child(3) {
         grid-template-columns: 1fr;
     }
-  
+
     .cards-content .card:nth-child(4) {
         display: flex;
         flex-direction: column;
         flex-flow: column-reverse;
     }
-    
-
-    
 }
 
 footer {
-    background: #1e2227;
+    background: var(--bg2);
     padding: 20px;
 }
 
