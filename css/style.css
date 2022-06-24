@@ -6,6 +6,19 @@
     --color1: #70e000;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color1);
+   
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -23,6 +36,8 @@ body {
     background-color: var(--bg1);
     font-family: "Poppins", sans-serif;
 }
+
+
 
 a {
     text-decoration: none;
@@ -245,7 +260,10 @@ li {
 .home h1 {
     color: var(--color1);
     font-size: 3rem;
+    animation: rotate 0.8s infinite;
 }
+
+
 
 .home p {
     color: #fff;
@@ -362,6 +380,7 @@ li {
         height: 100px;
         position: absolute;
         top: -40px;
+        
     }
 
     .detalhe {
@@ -370,8 +389,12 @@ li {
         position: absolute;
         right: 0;
         bottom: 0;
+        
+        
     }
 }
+
+
 
 /*ABOUT*/
 .about {
