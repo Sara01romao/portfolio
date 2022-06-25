@@ -8,7 +8,6 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-  
 }
 
 ::-webkit-scrollbar-track {
@@ -17,7 +16,6 @@
 
 ::-webkit-scrollbar-thumb {
     background: var(--color1);
-   
 }
 
 * {
@@ -187,7 +185,6 @@ li {
         display: none;
         gap: 0px;
         background-color: var(--bg1);
-        
     }
 
     .homeSection .menu.open {
@@ -202,9 +199,8 @@ li {
     @keyframes right {
         from {
             opacity: 0;
-            transition: transform ;
+            transition: transform;
             transform: translateX(150px);
-
         }
         to {
             opacity: 1;
@@ -269,34 +265,29 @@ li {
     overflow: hidden;
 }
 
-.home h1::after{
+.home h1::after {
     content: "";
-   
-    height: 40px;
+
+    height: 45px;
     background: rgb(255, 255, 255);
     transition: width 0.3s;
     position: absolute;
     z-index: -2;
-   
+
     animation: animeAfter 4.5s ease-in-out infinite alternate;
     animation-delay: 0.5s;
-    
 }
 
 @keyframes animeAfter {
-    from{
+    from {
         width: 10%;
         transform: translateX(0%);
-        
     }
 
-    to{
+    to {
         transform: translateX(100%);
         /* right: 0; */
         width: 100%;
-        
-    
-        
     }
 }
 
@@ -358,7 +349,7 @@ li {
     animation: fade 0.8s ease-in-out forwards;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .home-content {
         flex-direction: column;
         align-items: flex-start;
@@ -370,10 +361,14 @@ li {
 
     .home h1 {
         font-size: 1.7rem;
-
+        animation: animeAft 4.5s ease-in-out infinite alternate;
     }
 
-  
+    .home h1::after {
+        content: "";
+
+        height: 60px;
+    }
 
     .home p {
         font-size: 1.2rem;
@@ -454,10 +449,8 @@ li {
 
 .info img {
     transform: initial;
-    animation: upDown 1s ease-in-out infinite  alternate;
+    animation: upDown 1s ease-in-out infinite alternate;
 }
-
-
 
 .tech-tools {
     padding-top: 40px;
@@ -490,8 +483,7 @@ li {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    animation: animeOpacity 2.5s ease-in-out infinite  alternate;
-    
+    animation: animeOpacity 2.5s ease-in-out infinite alternate;
 }
 
 @media screen and (max-width: 768px) {
@@ -582,12 +574,11 @@ li {
     padding: 5px 20px;
     border: 1px solid red;
     border-radius: 5px;
-    transition:0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .card-txt a:hover {
     background: #303030;
-   
 }
 
 .btns a:nth-child(1) {
@@ -675,7 +666,6 @@ footer ul li a:hover {
         transform: initial;
     }
 }
-
 
 @keyframes upDown {
     from {
