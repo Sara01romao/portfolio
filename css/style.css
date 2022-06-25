@@ -260,12 +260,24 @@ li {
     font-size: 3rem;
     animation: rotate 0.8s infinite;
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
     align-items: center;
     position: relative;
     overflow: hidden;
 }
 
-.home h1::after {
+.home h1 span {
+    color: var(--color1);
+
+    animation: rotate 0.8s infinite;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.home h1 span::after {
     content: "";
 
     height: 45px;
@@ -280,13 +292,14 @@ li {
 
 @keyframes animeAfter {
     from {
-        width: 10%;
+        width: 0%;
+
         transform: translateX(0%);
     }
 
     to {
         transform: translateX(100%);
-        /* right: 0; */
+
         width: 100%;
     }
 }
@@ -312,10 +325,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.8s ease-in;
 }
 
 .txt a:hover {
-    background-color: #1a1c25;
+    background-color: #0b0c0f;
     color: rgb(255, 255, 255);
     border: 1px solid var(--color1);
 }
@@ -325,6 +339,10 @@ li {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.home-content ul svg path {
+    transition: 0.8s ease-in-out;
 }
 
 .home-content ul svg:hover path {
@@ -365,9 +383,7 @@ li {
     }
 
     .home h1::after {
-        content: "";
-
-        height: 60px;
+        content: none;
     }
 
     .home p {
@@ -525,6 +541,10 @@ li {
     grid-template-columns: 1.5fr 1fr;
 }
 
+.cards-content .card:nth-child(4) {
+    grid-template-columns: 1fr 1.5fr;
+}
+
 .card h4 {
     font-size: 1.3rem;
     font-weight: 400;
@@ -610,7 +630,7 @@ li {
         grid-template-columns: 1fr;
     }
 
-    .cards-content .card:nth-child(2) {
+    .cards-content .card:nth-child(2), .cards-content .card:nth-child(4) {
         display: flex;
         flex-direction: column;
         flex-flow: column-reverse;
@@ -620,11 +640,7 @@ li {
         grid-template-columns: 1fr;
     }
 
-    .cards-content .card:nth-child(4) {
-        display: flex;
-        flex-direction: column;
-        flex-flow: column-reverse;
-    }
+    
 }
 
 footer {
