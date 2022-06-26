@@ -181,20 +181,24 @@ li {
     }
 
     .homeSection .menu {
-        border: blue;
-        display: none;
+        display: flex;
         gap: 0px;
         background-color: var(--bg1);
+        position: relative;
+        right: -100%;
+        flex-direction: column;
+        width: 100%;
+      
+        z-index: 1;
+        transition: 0.6s;
     }
 
     .homeSection .menu.open {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        right: 0;
         height: 100vh;
-        animation: right 0.8s ease-out forwards;
-        z-index: 1;
+        
     }
+
 
     @keyframes right {
         from {
