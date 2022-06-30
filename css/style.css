@@ -2,7 +2,6 @@
 :root {
     --bg1: #151627;
     --bg2: #1d1e31;
-
     --color1: #70e000;
 }
 
@@ -11,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #000;
+    background-color: #121422;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -180,7 +179,6 @@ li {
         background: var(--bg1);
     }
 
-   
     .homeSection .menu {
         position: fixed;
         display: flex;
@@ -193,18 +191,11 @@ li {
         padding-top: 80px;
         transition: 0.8s;
         height: 100vh;
-        
-
     }
 
     .homeSection .menu.open {
         right: 0;
-        
-       
-        
     }
-
-
 
     .homeSection .menu li {
         width: 100%;
@@ -564,7 +555,6 @@ li {
     animation: animeAfterCard 4.5s ease-in-out infinite alternate;
 }
 
-
 .card img {
     max-width: 100%;
     border-radius: 5px;
@@ -729,12 +719,9 @@ footer a svg:hover path {
     from {
         width: 0%;
         opacity: 1;
-       
-
     }
 
     to {
-       
         opacity: 0;
         width: 100%;
     }
