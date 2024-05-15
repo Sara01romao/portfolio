@@ -516,9 +516,9 @@ li {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
@@ -544,7 +544,6 @@ li {
 } */
 
 .card h4 {
-    max-width: 150px;
     font-size: 1.3rem;
     font-weight: 400;
     display: flex;
@@ -604,6 +603,18 @@ li {
 .btns {
     display: flex;
     gap: 30px;
+}
+
+@media screen and (max-width:375px) {
+    .btns{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btns a{
+        text-align: center;
+    }
+    
 }
 
 .card-txt a {
