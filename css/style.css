@@ -516,84 +516,61 @@ li {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
+    width: 100%;
+    display: flex;
 }
 
-/* .cards-content .card:nth-child(1) {
-    grid-template-columns: 1.5fr 1fr;
+
+
+.tarja-stack{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 0px;
 }
 
-.cards-content .card:nth-child(2) {
-    grid-template-columns: 1fr 1.5fr;
+.tarja-stack li{
+    background-color: #4c9700;
+    padding: 1px 5px;
+    font-size: 12px;
+    border-radius: 19px;
 }
-
-.cards-content .card:nth-child(3) {
-    grid-template-columns: 1.5fr 1fr;
-}
-
-.cards-content .card:nth-child(4) {
-    grid-template-columns: 1fr 1.5fr;
-} */
 
 .card h4 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     display: flex;
     align-items: center;
     position: relative;
-}
-
-.card h4::after {
-    content: "";
-
-    height: 3px;
-    background: rgb(54, 143, 27);
-    transition: width 0.8s;
-    position: absolute;
-    bottom: -5px;
-
-    animation: animeAfterCard 4.5s ease-in-out infinite alternate;
+    margin: 8px 0px 10px;
 }
 
 .card img {
-    max-width: 100%;
+    max-width: 400px;
     border-radius: 5px;
 }
 
 .card-txt {
     color: #fff;
-    background: linear-gradient(
-        180deg,
-        #1e2227,
-        #1c2027,
-        #1a1f27,
-        #181d28,
-        #171b25,
-        #161a28,
-        #151827,
-        #151627
-    );
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px 20px 20px 40px;
-    gap: 20px;
+ 
     border-radius: 5px;
     position: relative;
     animation: animeBorder ease-in-out infinite alternate;
-    border: 2px solid #1d311e;
+    width: 100%;
 }
 
 .card-txt p {
-    height: 80px;
+    /* height: 80px; */
 }
 .card-txt p span {
     font-style: italic;
@@ -602,8 +579,17 @@ li {
 
 .btns {
     display: flex;
+    position: relative;
     gap: 30px;
+
+    border-top: 1px solid rgb(70, 70, 70);
+    padding: 20px 0px 0px;
+    margin-top: 30px;
 }
+
+
+
+
 
 @media screen and (max-width:375px) {
     .btns{
@@ -660,13 +646,22 @@ li {
         grid-template-columns: 1fr;
     }
 
-    /* .cards-content .card:nth-child(2),
-    .cards-content .card:nth-child(4) {
-        display: flex;
-        flex-direction: column;
-        flex-flow: column-reverse;
-    } */
+    
 }
+
+@media screen and (max-width:768px) {
+    .card{
+        flex-direction: column;
+    }
+   .card img{
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+   }
+    
+}
+
+
 
 @media screen and (max-width:450px) {
     .cards-content{
