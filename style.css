@@ -161,6 +161,35 @@ nav a:hover::after{
     left: 0;
 }
 
+.redes-container div{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+
+}
+
+.redes-container div a{
+    padding: 5px 10px;
+    color: #fff;
+    background: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+
+}
+
+.redes-container div a:nth-child(1){
+    background: #633BBC;
+}
+
+.redes-container div a:hover {
+    background-color: #555;
+}
+
+.redes-container div a:nth-child(1):hover {
+    background-color: #735d9e;
+}
 
 
 main{
