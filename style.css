@@ -103,16 +103,24 @@ nav a:hover::after{
     
 }
 
-.home-container{
-    padding: 20px;
+
+
+.sobre-container .redes-container div a:nth-child(2){
+    background: #000;
+}
+
+.sobre-container .redes-container div a:nth-child(3){
+    background: #f02b2b;
 }
 
 
-.home{
-    max-width: 1200px;
+
+
+
+.info{
+    max-width: 1000px;
     margin: 0 auto;
     background: #fff;
-    margin-top: 20px;
     padding: 50px 60px;
     border-radius: 10px;
     position: relative;
@@ -165,6 +173,7 @@ nav a:hover::after{
     display: flex;
     gap: 20px;
     margin-top: 15px;
+    flex-wrap: wrap;
 
 }
 
@@ -180,8 +189,17 @@ nav a:hover::after{
 }
 
 .redes-container div a:nth-child(1){
+    background: #3b70bc;
+}
+
+.redes-container div a:nth-child(2){
     background: #633BBC;
 }
+
+.redes-container div a:nth-child(4){
+    background: #f02b2b;
+}
+
 
 .redes-container div a:hover {
     background-color: #555;
@@ -195,7 +213,7 @@ nav a:hover::after{
 main{
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 18px;
     padding: 20px;
 }
 
@@ -239,10 +257,12 @@ main button.active::after{
 
 
 .projetos-container{
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .card-projeto{
+    max-width: 1000px;
+    margin: 0px auto 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -252,13 +272,10 @@ main button.active::after{
     background-color: #F1D9FF;
     cursor: pointer;
     margin-bottom: 30px;
-   
+    border-radius: 8px;
 
 }
 
-#uiux .card-projeto{
-    background-color: #ffd9f1;
-}
 
 .card-projeto.color2{
     background-color: #151627;
@@ -357,4 +374,13 @@ main button.active::after{
 
 #backToTopBtn:hover {
     background-color: #555;
+}
+
+
+.txt-contato h2{
+    font-family: "Rancho", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
