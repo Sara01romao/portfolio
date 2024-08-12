@@ -126,6 +126,12 @@ nav a:hover::after{
     position: relative;
 }
 
+@media screen and (max-width:425px) {
+    .info{
+        padding: 30px 20px;
+    }
+}
+
 .title-sobre p{
     font-size: 18px;
 }
