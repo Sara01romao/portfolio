@@ -307,6 +307,8 @@ main button.active::after{
 
 }
 
+
+
 @media screen and (max-width:506px) {
     .home{
         padding: 50px 20px;
@@ -327,6 +329,8 @@ main button.active::after{
         width: 40px;
     }
 }
+
+
 
 .card-txt ul{
     display: flex;
@@ -387,4 +391,11 @@ main button.active::after{
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 425px) {
+    .title-sobre h1 {
+        font-size: 1.3rem;
+    }
 }
