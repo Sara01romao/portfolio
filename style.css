@@ -195,7 +195,7 @@ nav a:hover::after{
 }
 
 .redes-container div a:nth-child(1){
-    background: #3b70bc;
+    background: #0954c0;
 }
 
 .redes-container div a:nth-child(2){
@@ -208,12 +208,10 @@ nav a:hover::after{
 
 
 .redes-container div a:hover {
-    background-color: #555;
+    
+    filter: brightness(0.8);
 }
 
-.redes-container div a:nth-child(1):hover {
-    background-color: #735d9e;
-}
 
 
 main{
