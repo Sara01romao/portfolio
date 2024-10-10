@@ -1,5 +1,5 @@
 :root{
-    --colo1:#633BBC;
+    --colo1:#d90dc2;
     --colo2:#151627;
 }
 
@@ -22,11 +22,26 @@ a{
     text-decoration: none;
 }
 
+header{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 31%, rgba(60,56,91,1) 100%);
+    position: relative;
+}   
+
+
+.detalhe-onda{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .logo-container{
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #000;
+    background: #222037;
+    padding: 10px 10px 40px;
 }
 
 #logo{
@@ -93,14 +108,13 @@ nav a:hover::after{
 }
 
 .banner{
-    background-color:#151627 ;
+    background-color:#1D1B22;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
     padding: 44px 20px 0px;
     
-
 }
 
 .banner img {
@@ -152,7 +166,7 @@ nav a:hover::after{
 
 section.intro{
     margin: 0 auto;
-    padding: 20px ;
+    padding:20px ;
 }
 
 .txt-descricao{
@@ -175,7 +189,6 @@ section.intro{
     display: flex;
     gap: 10px;
     margin-top: 10px;
-    flex-wrap: wrap;
 }
 
 .tech-list li{
@@ -243,7 +256,7 @@ section.intro{
 section.estilos{
     margin: 0 auto;
     padding: 20px 20px 80px;
-    background: #fff;
+    background: #1D1B22;
 }
 
 section.estilos h2{
@@ -251,6 +264,7 @@ section.estilos h2{
     font-size: 50px;
     text-align: center;
     font-weight: 500;
+    color: #fff;
 }
 
 
@@ -262,6 +276,7 @@ section.estilos h2{
 section.estilos h4{
     color: var(--colo1);
     font-size: 24px;
+    color: #fff;
 }
 
 .txt-fonte div{
@@ -270,7 +285,7 @@ section.estilos h4{
 }
 
 .txt-fonte div p{
-    color: var(--colo1);
+    color: #1D1B22;
     font-weight: bold;
     font-size: 24px;
     display: flex;

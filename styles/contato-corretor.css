@@ -1,5 +1,5 @@
 :root{
-    --colo1:#633BBC;
+    --colo1:#d90dc2;
     --colo2:#151627;
 }
 
@@ -22,11 +22,26 @@ a{
     text-decoration: none;
 }
 
+header{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 31%, rgba(60,56,91,1) 100%);
+    position: relative;
+}   
+
+
+.detalhe-onda{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .logo-container{
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #000;
+    background: #222037;
+    padding: 10px 10px 40px;
 }
 
 #logo{
@@ -56,16 +71,6 @@ nav a{
     
 }
 
-/* nav a.active{
-    color: var(--colo1);
-} */
-
-/* nav a::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: var(--colo1);
-} */
 
 nav a.active::after{
     width: 100%;
@@ -102,7 +107,7 @@ nav a:hover::after{
 }
 
 .banner{
-    background-color:#151627 ; 
+    background-color:#1D1B22 ; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,7 +166,7 @@ nav a:hover::after{
 
 section.intro{
     margin: 0 auto;
-    padding: 20px ;
+    padding:10px 20px ;
 }
 
 .txt-descricao{
@@ -252,7 +257,7 @@ section.intro{
 section.estilos{
     margin: 0 auto;
     padding: 20px 20px 80px;
-    background: #fff;
+    background: #1D1B22;
 }
 
 section.estilos h2{
@@ -260,6 +265,7 @@ section.estilos h2{
     font-size: 50px;
     text-align: center;
     font-weight: 500;
+    color: #fff;
 }
 
 
@@ -269,7 +275,7 @@ section.estilos h2{
 }
 
 section.estilos h4{
-    color: var(--colo1);
+    color: #fff;
     font-size: 24px;
 }
 
@@ -279,7 +285,7 @@ section.estilos h4{
 }
 
 .txt-fonte div p{
-    color: var(--colo1);
+    color: #000;
     font-weight: bold;
     font-size: 24px;
     display: flex;
@@ -305,8 +311,6 @@ section.estilos h4{
 
 
 .paleta-cores{
-   
-   
     display: flex;
     
 }
@@ -316,19 +320,21 @@ section.estilos h4{
     width: 50%;
     padding:10px;
     color: #fff;
+    height: 80px;
 }
 
 .cores-secundarias{
     width: 100%;
     display: flex;
     flex-direction: column;
+   
 }
 
 
 .cores-secundarias div:nth-child(1) div{
     flex: 1;
     padding:10px;
-    height: 125px;
+    height: 80px;
 }
 
 .cores-secundarias div:nth-child(1) div:nth-child(1){
@@ -337,7 +343,6 @@ section.estilos h4{
 }
 
 .cores-secundarias div:nth-child(1) div:nth-child(2){
-    border: 1px solid #e8e8e8;
     border-left: none;
     border-bottom: none;
     background: #00B443;
@@ -365,11 +370,6 @@ section.estilos h4{
 
 
 @media screen and (max-width: 425px) {
-    .cores-secundarias div:nth-child(2) div, .cores-secundarias div:nth-child(1){
-        height: 62px;
-       
-    }
-
     .txt-fonte div p{
         gap: 15px;
     }

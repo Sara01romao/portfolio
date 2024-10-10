@@ -1,5 +1,5 @@
 :root{
-    --colo1:#633BBC;
+    --colo1:#d90dc2;
     --colo2:#151627;
 }
 
@@ -22,11 +22,25 @@ a{
     text-decoration: none;
 }
 
+header{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 31%, rgba(60,56,91,1) 100%);
+    position: relative;
+}   
+
+.detalhe-onda{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .logo-container{
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #000;
+    background: #222037;
+    padding: 10px 10px 40px;
 }
 
 #logo{
@@ -40,6 +54,7 @@ nav{
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
+    
 }
 
 nav a{
@@ -90,26 +105,25 @@ nav a:hover::after{
 }
 
 .btn-voltar a{
-    
     display: flex;
     width: fit-content;
     border-radius: 50%;
-}
-
-.btn-voltar a:hover{
-    background: #e1b6fa;
     
 }
 
+
+.btn-voltar a:hover{
+    background: #e1b6fa;
+}
+
 .banner{
-    background-color:#F1D9FF ;
+    background-color:#1D1B22;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
     padding: 44px 20px 0px;
     
-
 }
 
 .banner img {
@@ -140,7 +154,6 @@ nav a:hover::after{
     background-color: #000;
     color: #fff;
     transition: 0.3s ease-in;
-    
 }
 
 .links-projeto a:hover{
@@ -149,8 +162,7 @@ nav a:hover::after{
 }
 
 .links-projeto a:nth-child(1){
-    background: var(--colo1);
-    
+    background: var(--colo1);   
 }
 
 .links-projeto a:nth-child(1):hover{
@@ -184,7 +196,6 @@ section.intro{
     display: flex;
     gap: 10px;
     margin-top: 10px;
-    flex-wrap: wrap;
 }
 
 .tech-list li{
@@ -252,7 +263,7 @@ section.intro{
 section.estilos{
     margin: 0 auto;
     padding: 20px 20px 80px;
-    background: #fff;
+    background: #1D1B22;
 }
 
 section.estilos h2{
@@ -260,6 +271,7 @@ section.estilos h2{
     font-size: 50px;
     text-align: center;
     font-weight: 500;
+    color: #fff;
 }
 
 
@@ -269,7 +281,7 @@ section.estilos h2{
 }
 
 section.estilos h4{
-    color: var(--colo1);
+    color: #fff;
     font-size: 24px;
 }
 
@@ -279,7 +291,7 @@ section.estilos h4{
 }
 
 .txt-fonte div p{
-    color: var(--colo1);
+    color: #000;
     font-weight: bold;
     font-size: 24px;
     display: flex;
