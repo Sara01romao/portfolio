@@ -392,9 +392,6 @@ footer div a:hover{
 }
 
 @media screen and (max-width:375px) {
-    /* .card-projeto{
-        flex-direction: column;
-    } */
 
     .card-txt{
         min-width: initial;
