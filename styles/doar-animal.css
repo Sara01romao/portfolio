@@ -1,5 +1,5 @@
 :root{
-    --colo1:#d90dc2;
+    --colo1:#EB4798;
     --colo2:#151627;
 }
 
@@ -11,7 +11,8 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: #F7F7F7;
+    background-color: #18162d;
+    color: #fff;
 }
 
 ul{
@@ -108,7 +109,7 @@ nav a:hover::after{
 }
 
 .banner{
-    background-color:#1D1B22;
+    background-color:#222037;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,7 +232,7 @@ section.intro{
 }
 
 .funcao h3{
-    color: #633BBC;
+    color: #EB4798;
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-weight: 500;
@@ -252,6 +253,7 @@ section.intro{
     padding: 10px;
     border-radius: 5px;
     justify-content: space-between;
+    color: #000;
    
 }
 
@@ -261,7 +263,7 @@ section.intro{
 section.estilos{
     margin: 0 auto;
     padding: 20px 20px 80px;
-    background: #1D1B22;
+    background: #222037;
 }
 
 section.estilos h2{
