@@ -1,6 +1,6 @@
 
 :root{
-    --colo1:#EB4798;
+    --colo1:#EC6990;
     --colo2:#151627;
 }
 
@@ -94,21 +94,23 @@ a{
     margin: 0 auto;
 }
 .home{
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 20px;
     padding: 50px 40px;
     border-radius: 10px;
     position: relative;
-    max-width: 800px;
-    
-    
+}
+
+.home.container{
+    width: fit-content;
 }
 
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px 10px ;
     position: absolute;
     top: 50px;
     left: 0;
@@ -143,7 +145,7 @@ header ul a:hover{
 }
 
 .home h1 strong {
-    background: linear-gradient(to right, #EB4798, #d928fd, #EB4798);
+    background: linear-gradient(to right, #EC6990, #44B6CE, #EB4798);
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,7 +233,7 @@ header ul a:hover{
 
 .btn-cv:hover{
     transition: 0.8s ease;
-    background: #bb1ca9;
+    background: #EB4798;
 }
 
 main{
@@ -287,6 +289,7 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
+    font-weight: 400;
 }
 
 .title-projeto:after {
@@ -294,7 +297,7 @@ main{
     display: block;
     width: 0%;
     height: 2.5px;
-    background: var(--colo1);
+    background: #44B6CE;
     animation: lineAnime 8s infinite ease-in-out;
 }
 
@@ -335,8 +338,8 @@ main{
 }
 
 .card-projeto a:hover{
-    background: #2b0e6c;
-    transition: 0.3s ease;
+    background: #EB4798;
+    transition: 0.8s ease;
 }
 
 
@@ -419,7 +422,7 @@ main{
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
     header{
         flex-direction: column; 
     }
@@ -448,10 +451,15 @@ main{
         flex-direction: column; 
     }
 
+
+
+}
+
+@media screen and (min-width:1400px) {
+    
+
     .home{
-        max-width: 600px;
+       width: 100%;
     }
 
- 
-    
 }
