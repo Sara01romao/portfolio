@@ -213,12 +213,21 @@ header ul a:hover{
 }
 
 .txt-sobre p span{
-    color: var(--colo1);
-    font-weight: 500;
+    color: #44B6CE;
+   
+}
+
+.txt-sobre ul{
+    font-size: 18px;
+    list-style: georgian inside url('./imgs/list-icon.svg');
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .btn-cv{
-    background:var(--colo1);
+    background:#1A95AF;
     color: #ffff;
     height: 40px;
     width: 150px;
@@ -233,7 +242,7 @@ header ul a:hover{
 
 .btn-cv:hover{
     transition: 0.8s ease;
-    background: #EB4798;
+    background: #0B6D82;
 }
 
 main{
